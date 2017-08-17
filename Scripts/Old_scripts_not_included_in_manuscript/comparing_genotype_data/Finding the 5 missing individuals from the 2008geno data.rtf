@@ -1,0 +1,57 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1404\cocoasubrtf470
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww19120\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 #these are the lines that are uniq to HierFstat and missing from the 2008geno data\
+ \
+  1 QBED1,196:198,96:106,251:253,202:206,227:227,NA:NA,144:146,132:135 -line 3         QBED1-1-3\
+   1 QRL1,198:198,106:106,209:238,210:210,229:229,NA:NA,144:144,128:132 line 170 :     QRL1-1-1M: \
+   1 QRL2,198:198,106:106,230:249,196:196,217:217,NA:NA,144:144,122:128 line 214       QRL2-1-52\
+   1 QRL2,188:198,106:112,209:209,196:208,229:233,NA:NA,146:146,132:132 line 227       QRL2-2-4G\
+   1 QRL2,198:198,106:106,213:213,196:196,247:247,NA:NA,144:144,122:135,202:202 :line 236      QRL2-2-4S -but in the all genotypes dataset there is only microsat data for 3 loci. \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+How I found missing data:\
+#the problem is that HierFstat and other data for instruct for example has 280 individuals that were genotyped\
+#but the 2008geno dataset only had calls for 275 individuals\
+\
+#pull out the plant ID from the dataset called 2008Geno.csv\
+cut -d ',' -f 1 2008Geno.csv > uniq_2008_Geno_plant_id\
+\
+#Pull out plant ID from the all genotype dataset\
+cut -d ',' -f 14 allgenotype2008_out.csv > uniq_all_genotype_plant_names\
+\
+\
+#for each, sort the file by the plant name and pull out only the uniq plant names\
+sort uniq_all_genotype_plant_names | uniq >uniq_all_genotype_plant_names.uniq\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+sort uniq_2008_Geno_plant_id | uniq >uniq_2008_Geno_plant_id.uniq\
+\
+#now merge together the 2008geno data with the \'93all genotypes\'94 data to find which plants are missing from the 2008geno data\
+#and pull out names which only occur once\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+cat uniq_all_genotype_plant_names.uniq uniq_2008_Geno_plant_id.uniq |sort | uniq -c |grep " 1 "\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+These are the names of the missing samples:\
+   1 QBED1-1-3\
+   1 QRL1-1-1M\
+   1 QRL2-1-52\
+   1 QRL2-2-4G\
+   1 QRL2-2-4S\
+\
+#I then checked these ID\'92s in the all genotypes dataset and confirmed that these are the genotypes that are present in the HierFstat data but that lacked a plant ID. \
+\
+\
+I added these missing data to the 2008 genes data\
+\
+}

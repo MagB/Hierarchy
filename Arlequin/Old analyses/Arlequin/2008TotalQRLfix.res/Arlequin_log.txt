@@ -1,0 +1,23 @@
+Log file path: C:/users/Andy/Desktop/Arlequin/2008TotalQRLfix.res/Arlequin_log.txt
+Core Routine Directory: C:/Program Files/WinArl3.5/
+Random number generator initialized with lidum=-1203668
+Reading project profile section...
+done !
+Opening next project...
+C:/users/Andy/Desktop/Arlequin/2008TotalQRLfix.arp
+////////////////////////////////////////////////////////////////////
+RUN NUMBER 1 (23/09/11 at 14:24:59)
+////////////////////////////////////////////////////////////////////
+
+
+Reading Project: 
+Reading input file ...
+	Reading Samples section ...
+	Reading Name of Population number 1 ... 
+	Number of loci for genotype "h1" is different (3) from that previously defined (1) on line 29
+   1 #[ERROR # 1] from function "Population::New_read_genotypic_data()" : phenotypes have different number of loci
+   2 #[ERROR # 2] from function "Samples::NewRead()" : unable to read sample data
+	Problems in reading Samples section... aborting reading  project file.
+
+Error opening project... C:/users/Andy/Desktop/Arlequin/2008TotalQRLfix.res/2008TotalQRLfix.arp
+Error during run of C:/users/Andy/Desktop/Arlequin/2008TotalQRLfix.arp

@@ -1,0 +1,138 @@
+#================================
+#Project file created by Arlequin
+#================================
+
+#    (symbol # is used to comment what follows on a line)
+
+[Profile]
+     NbSamples=14
+     DataType=STANDARD  # - {DNA, RFLP, MICROSAT, STANDARD, FREQUENCY}
+     GenotypicData=1  # - {0, 1}
+     GameticPhase=0  # - {0, 1}
+     LocusSeparator=WHITESPACE  # - {TAB, WHITESPACE, NONE}
+     RecessiveData=0  # - {0, 1}
+     MissingData='?'  # A single character specifying missing data
+#    Some advanced settings the experienced user can uncomment
+#    Frequency= ABS             # - {ABS, REL}
+#    FrequencyThreshold= 1.0e-5 # - (Any real number, usually between 1.0e-7 and 1.e-3)
+#    EpsilonValue= 1.0e-7       # - (Any real number, usually between 1.0e-12 and 1.0e-5)
+
+[Data]
+
+[[Samples]]
+
+     SampleName="Name of Population number 1"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 2"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 3"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 4"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 5"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 6"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 7"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 8"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 9"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 10"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 11"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 12"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 13"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+     SampleName="Name of Population number 14"
+     SampleSize= 6  #Fictive number, but must match the sume of haplotype frequencies given below
+	   SampleData= {
+        #Example of a sample consisiting of haplotypic data (2 haplotypes, 2 loci):
+        h1       2     TC
+        h2       4     GT
+     }
+
+
+
+

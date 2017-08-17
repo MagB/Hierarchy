@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/Program Files/WinArl3.5/ArlequinStyleSheet.xsl"?>
+<!--Arlequin results file-->
+
+<Arlequin>
+
+<data>
+
+
+</data>
+
+<header>
+Arlequin results
+</header>
+<data>
+
+</data>
+
+ <A NAME="23_09_11at14_24_59"></A> 
+<data>
+
+</data> <run time="23/09/11 at 14:24:59">
+
+////////////////////////////////////////////////////////////////////
+RUN NUMBER 1 (23/09/11 at 14:24:59)
+////////////////////////////////////////////////////////////////////
+
+</run> <data>
+ #[ERROR # 1] : phenotypes have different number of loci
+ #[ERROR # 2] : unable to read sample data
+
+</data>
+
+</Arlequin>
+
